@@ -8,8 +8,8 @@ The live coding in the workshop may use **Terminal** inside **jupyter Lab**, whi
 - workshop website [https://indico.cern.ch/event/1190572/timetable/](https://indico.cern.ch/event/1190572/timetable/)
 - Unix Shell, full material from The Carpentries [https://swcarpentry.github.io/shell-novice/](https://swcarpentry.github.io/shell-novice/)
 - Version Control with Git, full material from The Carpentries [https://swcarpentry.github.io/git-novice/index.html](https://swcarpentry.github.io/git-novice/index.html)
-- Unix Shell course material [https://zdshaoteach.github.io/2022-09-28-upr-online/unix-shell.html](https://zdshaoteach.github.io/2022-09-28-upr-online/unix-shell.html)
-- Version Control with Git course material [https://zdshaoteach.github.io/2022-09-28-upr-online/version-control-with-git.html](https://zdshaoteach.github.io/2022-09-28-upr-online/version-control-with-git.html)
+- Workshop slides: Unix Shell course material [https://zdshaoteach.github.io/2022-09-28-upr-online/unix-shell.html](https://zdshaoteach.github.io/2022-09-28-upr-online/unix-shell.html)
+- Workshop slides: Version Control with Git course material [https://zdshaoteach.github.io/2022-09-28-upr-online/version-control-with-git.html](https://zdshaoteach.github.io/2022-09-28-upr-online/version-control-with-git.html)
 
 
 ## previous slides : git episodes with bash kernel
