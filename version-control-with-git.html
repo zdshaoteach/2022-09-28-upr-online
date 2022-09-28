@@ -17019,7 +17019,8 @@ hint: &#34;git config advice.addIgnoredFile false&#34;
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-bash"><pre><span></span>ssh-keygen -t ed25519 -C <span class="s2">&quot;zdshao.teach@gmail.com&quot;</span> -f ~/.ssh/id_ed25519 -N <span class="s2">&quot;&quot;</span>
+<div class=" highlight hl-bash"><pre><span></span>ssh-keygen -t ed25519 -C <span class="s2">&quot;zdshao.teach@gmail.com&quot;</span> <span class="se">\</span>
+-f ~/.ssh/id_ed25519 -N <span class="s2">&quot;&quot;</span>
 </pre></div>
 
      </div>
@@ -17027,6 +17028,25 @@ hint: &#34;git config advice.addIgnoredFile false&#34;
 </div>
 </div>
 
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>about the ssh-keygen, the <a href="https://urldefense.proofpoint.com/v2/url?u=https-3A__en.wikipedia.org_wiki_Ssh-2Dkeygen&amp;d=DwIDaQ&amp;c=XYzUhXBD2cD-CornpT4QE19xOJBbRy-TBPLK0X9U2o8&amp;r=EeFoIs6zuxqCZzFjrEp29mxBoxjuaBBBEDRDP5cCvEw&amp;m=4URDs-vdI4uD50_OhIlVECC4VvxrxYwgmxFQ67v5cQboASW59iGAe_Qy9NordIwr&amp;s=Nvz8PfqoPw6BxBxxNWw8xVfixdYIEjmdf37jkVPLMDA&amp;e=">wiki page</a></p>
+<p>For</p>
+<p><code>ssh-keygen -t ed25519 -C "zdshao.teach@gmail.com" -f ~/.ssh/id_ed25519 -N ""</code></p>
+<ul>
+<li><code>-t</code> indicates the key type;</li>
+<li><code>-C</code> as the comment, and it does not have to be the email, while it is in practice; </li>
+<li><code>-N</code> indicates the Passphrase, where <code>""</code> (empty string) indicates no Passphrase; -f for the saving path;</li>
+</ul>
+
+</div>
+</div>
+</div>
 </div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -17066,15 +17086,16 @@ hint: &#34;git config advice.addIgnoredFile false&#34;
 
 </div>
 
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[53]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-bash"><pre><span></span>cat ~/.ssh/id_ed25519
+<div class=" highlight hl-bash"><pre><span></span><span class="c1"># private key</span>
+cat ~/.ssh/id_ed25519
 </pre></div>
 
      </div>
@@ -17082,72 +17103,21 @@ hint: &#34;git config advice.addIgnoredFile false&#34;
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>-----BEGIN OPENSSH PRIVATE KEY-----
-b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
-QyNTUxOQAAACBoD0aELciZlXnHT/RzL/C57nQ5k5XBSIQfkLJeaCm2BQAAAKCmHNNTphzT
-UwAAAAtzc2gtZWQyNTUxOQAAACBoD0aELciZlXnHT/RzL/C57nQ5k5XBSIQfkLJeaCm2BQ
-AAAEB7qM7P+tjLUp020pCohOLpyr9hUw76zwSqZUHKgWZWOmgPRoQtyJmVecdP9HMv8Lnu
-dDmTlcFIhB+Qsl5oKbYFAAAAFnpkc2hhby50ZWFjaEBnbWFpbC5jb20BAgMEBQYH
------END OPENSSH PRIVATE KEY-----
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[54]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-bash"><pre><span></span>cat ~/.ssh/id_ed25519.pub
+<div class=" highlight hl-bash"><pre><span></span><span class="c1"># public key</span>
+cat ~/.ssh/id_ed25519.pub
 </pre></div>
 
      </div>
 </div>
 </div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGgPRoQtyJmVecdP9HMv8LnudDmTlcFIhB+Qsl5oKbYF zdshao.teach@gmail.com
-</pre>
-</div>
-</div>
-
-</div>
-
 </div>
 
 </div></section><section>
